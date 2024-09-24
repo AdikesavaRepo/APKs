@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="guide">
+            <h2>How to Play</h2>
+            <p><strong>Objective:</strong> Get three of your marks in a row—horizontally, vertically, or diagonally.</p>
+            <p><strong>Starting the Game:</strong> Click the "Reset Game" button to start a new game.</p>
+            <p><strong>Gameplay:</strong> Players take turns clicking on empty cells. The first player uses "X" and the second player uses "O".</p>
+            <p><strong>Winning:</strong> The game checks for a winner after each turn. If a player gets three in a row, their victory message will be displayed.</p>
+            <p><strong>Draw:</strong> If all cells are filled and no player has three in a row, the game will declare a draw.</p>
+            <p><strong>Resetting:</strong> Click the "Reset Game" button at any time to start over.</p>
+        </div>
+        <div class="grid" id="gameBoard"></div>
+        <div class="status" id="statusMessage"></div>
+        <button id="resetButton">Reset Game</button>
+
+        <!-- New Winner Screen -->
+        <div id="winnerScreen" class="winner-screen" style="display: none;">
+            <h2 id="winnerMessage"></h2>
+            <button id="newMatchButton">New Match</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
